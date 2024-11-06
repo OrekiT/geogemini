@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L-sports003 GeoGemini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>L-sports003 GeoGemini</h1>
+    
+    <div class="controls">
+        <input type="number" id="questionNumber" placeholder="問題番号">
+        <button id="setQuestionButton">問題を確定</button>
+        <button id="finalAnswerButton">Final Answer</button>
+        <label><input type="radio" name="mapType" value="roadmap" checked> 地図</label>
+        <label><input type="radio" name="mapType" value="satellite"> 航空写真</label>
+    </div>
+    
+    <div id="map"></div>
+
+    <button id="goButton">Go!</button>
+    <p id="result"></p>
+
+    <!-- myapi.js を介して Google Maps API を読み込む -->
+    <script src="/api/myapi"></script>
+    <script src="script.js"></script>
+</body>
+</html>
